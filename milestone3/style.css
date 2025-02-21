@@ -1,0 +1,37 @@
+#wrapper {
+    margin: 0px;
+    padding: 0px;
+    display:grid;
+    background-color: rgba(255, 145, 0, 0.3);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+}
+nav {
+    background-color: rgba(255, 0, 0, 0.3);
+    grid-column: 1 / -1;
+    height: 80px;
+}
+header {
+    background-color: rgba(0, 255, 0, 0.3);
+    grid-column: 2 / -2;
+    height: 250px;
+}
+main {
+    background-color: rgb(0, 0, 255, 0.3);
+    height: 100px;
+    grid-column: 2 / 5;
+}
+#past-projects {
+    grid-column: 2 / span 3;
+    background-color: rgba(0, 247, 255, 0.3);
+    height: 600px;
+}
+#images {
+    grid-column: 5 / span 3;
+    background-color: rgba(200, 255, 0, 0.3);
+    height: 600px;
+}
+footer {
+    background-color: rgb(255, 0, 255, 0.3);
+    height: 70px;
+    grid-column: 1 / -1;
+}
