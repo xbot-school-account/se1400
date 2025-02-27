@@ -1,3 +1,6 @@
+* {
+    font-family: "Exo 2", sans-serif;
+}
 body {
     margin: 0px;
     padding: 0px;
@@ -39,8 +42,11 @@ nav ul li {
 }
 header {
     background-image: url(images/background.png);
-    grid-column: 2 / -2;
+    grid-column: 1 / -1;
     height: 250px;
+    text-align: center;
+    color: white;
+    font-size: 2em;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -51,11 +57,13 @@ main {
     grid-column: 2 / 5;
 }
 #past-projects {
-    grid-column: 2 / span 3;
+    grid-column: 2 / span 2;
 }
-#images {
-    grid-column: 5 / span 3;
-    background-color: rgba(200, 255, 0, 0.3);
+#current-projects {
+    grid-column: 4 / span 2;
+}
+#future-projects {
+    grid-column: 6 / span 2;
 }
 .flex-cointainer {
     display: flex;
@@ -67,8 +75,17 @@ main {
     margin: 10px;
     padding: 5px;
 }
+.text-box h3 {
+    text-align: center;
+    margin-top: 2px;
+}
+.img-box {
+    border: solid;
+    border-radius: 20px;
+    margin: 10px;
+    max-width: 90%;
+}
 footer {
-    background-color: rgb(255, 0, 255, 0.3);
-    height: 70px;
     grid-column: 1 / -1;
+    text-align: center;
 }
