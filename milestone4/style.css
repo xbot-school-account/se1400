@@ -1,0 +1,74 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper {
+    margin: 0px;
+    padding: 0px;
+    display:grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+}
+nav {
+    background-color: white;
+    grid-column: 1 / -1;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+}
+nav a {
+    text-decoration: none;
+    color: #000000;
+    padding: 1rem 0rem;
+    display: block;
+    text-align: center;
+}
+nav a:hover {
+    background-color: #2cd5ff;
+}
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+}
+nav ul li {
+    border: solid;
+    border-width: 2px 1px 2px 1px;
+    width: 100%
+}
+header {
+    background-image: url(images/background.png);
+    grid-column: 2 / -2;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+main {
+    background-color: rgb(0, 0, 255, 0.3);
+    height: 100px;
+    grid-column: 2 / 5;
+}
+#past-projects {
+    grid-column: 2 / span 3;
+}
+#images {
+    grid-column: 5 / span 3;
+    background-color: rgba(200, 255, 0, 0.3);
+}
+.flex-cointainer {
+    display: flex;
+    flex-direction: row;
+}
+.text-box {
+    border: solid;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px;
+}
+footer {
+    background-color: rgb(255, 0, 255, 0.3);
+    height: 70px;
+    grid-column: 1 / -1;
+}
