@@ -5,13 +5,13 @@ body {
     background-image: linear-gradient(#eeeeee, #ffffff);
     background-attachment: fixed;
     color: #666666;
-    font-family: Verdana;
+    font-family: Verdana, sans-serif;
     margin: 0px;
 }
 header {
     background-color: #003058;
     color: #FFFFFF;
-    font-family: Georgia;
+    font-family: Georgia, serif;
     grid-row: 1 / 2;
     grid-column: 2 / 8;
 }
