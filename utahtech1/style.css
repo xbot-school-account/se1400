@@ -1,12 +1,12 @@
 body {
     background-color: #FFFFFF;
     color: #666666;
-    font-family: Verdana;
+    font-family: Verdana, sans-serif;
 }
 header {
     background-color: #003058;
     color: #FFFFFF;
-    font-family: Georgia;
+    font-family: Georgia, serif;
 }
 header h1 {
     line-height: 140%;
