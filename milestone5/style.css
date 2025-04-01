@@ -13,8 +13,6 @@ body {
 }
 footer {
     color: lightslategray;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 nav {
