@@ -10,15 +10,15 @@
     <title>Document</title>
 </head>
 <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About XSC</a></li>
-                <li><a href="merchandise.html">Mechandise</a></li>
-                <li><a href="dtas.html">DTAS</a></li>
-                <li><a href="music.html">Music</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About XSC</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="dtas.html">DTAS</a></li>
+            <li><a href="hardware.html">Hardware</a></li>
+        </ul>
+    </nav>
         <main>
             <header id="abouthero"><h1>About Us</h1></header>
             <section id="theteam">
@@ -49,10 +49,11 @@
             <section id="about-mission">
                     <div class="text-box">
                         <h2>What is XSC?</h2>
-                        <p>XSCorporation (XSC) is a game studio founded by non-Euclidean cryptids from a dimension beyond human comprehension,
+                        <p>XSCorporation (XSC) is a game studio founded by non-Euclidean <span id="triggerWord" style="color: blue; cursor: pointer;">cryptids</span> from a dimension beyond human comprehension,
                             doing their best to appear convincingly human. We create games that blend emotional storytelling with reality-warping mechanics 
-                            and visuals that occasionally violate the laws of physics—purely by design, of course. While our origins lie beyond space and sanity, 
-                            we’re committed to delivering innovative, soul-safe interactive experiences for Earth-based lifeforms. XSCorporation: We almost pass for human.</p>
+                            and visuals that occasionally violate the laws of physics—purely by design, of course. Enjoy our games on platforms like XBox, Playstation, PC, Omnibox 0, and more. While our origins lie beyond space and sanity, 
+                            we’re committed to delivering innovative, soul-safe interactive experiences for life-forms restricted to the third dimension. XSCorporation: We almost pass for human.
+                    </p>
                     </div>
                     <div class="text-box">
                         <h2>Our Mission Statement</h2>
@@ -64,7 +65,51 @@
                         well, most people would call “human.” Welcome to the future—our future.</p>
                     </div>
             </section>
+            <section id="poetry">
+                <div class="text-box">
+                    <audio id="secret-audio" src="audio/secret.mp3" preload="auto"></audio>
+                    <h2>A Tragedy in Flex and Fray: A Sonnet on Grid and Man</h2>
+                    <p>O Grid, thou lattice vile of cruel design,<br>
+                        Thy syntax speaks in tongues the gods forswore.<br>
+                        We draw thy lines, thy bounds, thy columned spine—<br>
+                        Yet chaos walks where order stood before.<br>
+                        <br>
+                        "Repeat!" we cry, "Auto-fit, obey!"<br>
+                        But lo, our children squeeze into the void,<br>
+                        While spacing mocks us, drifting far away—<br>
+                        The right edge yawns, alignment is destroyed.<br>
+                        <br>
+                        But fools are we, who seek in sheets of style<br>
+                        A scaffold for the cosmos we pretend.<br>
+                        What mad ambition builds this code-fraught pile?<br>
+                        What mortal thinks the DOM shall ever bend?<br>
+                        <br>
+                        So curse not Grid alone—take up thy blame,<br>
+                        For Man and Markup both are much the same.</p>
+                </div>
+            </section>
         </main>
         <footer><p>Copyright &copy; 2025 XSCorporation</p></footer>
+        <script>
+            const trigger     = document.getElementById('triggerWord');
+            const popup       = document.getElementById('poetry');
+            const sound       = document.getElementById('secret-audio');
+            let   soundPlayed = false;
+          
+            trigger.addEventListener('click', () => {
+              // 1) Fade the div in (every click)
+              // Also disables the triggerword
+              popup.classList.add('show');
+              trigger.style.color = 'black';
+              trigger.style.cursor = 'default';
+          
+              // 2) Play the sound only once
+              if (!soundPlayed) {
+                sound.currentTime = 0;
+                sound.play().catch(err => console.error(err));
+                soundPlayed = true;      // ← never play again
+              }
+            });
+          </script>
 </body>
 </html>
