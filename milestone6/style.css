@@ -53,6 +53,11 @@ nav ul li {
     width: 100%
 }
 
+.fine-print {
+    font-size: 8px;
+    color: lightgray;
+}
+
 header {
     grid-column: 1 / -1;
     color: white;
@@ -77,6 +82,10 @@ header img {
 }
 #partnerhero {
     background-image: url(images/partner-background.png);
+}
+#hardwarehero {
+    background-image: url(images/hardwarebackground.png);
+    color: black;
 }
 img {
     max-width: 100%;
@@ -138,6 +147,10 @@ section {
 }
 .partner-logo:hover {
     height: 250px;
+}
+
+#about-hardware {
+    grid-column: 1 / -1;
 }
 
 .text-box {
