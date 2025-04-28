@@ -204,10 +204,15 @@ section {
 }
 .img-box {
     border: solid;
+    border-color: white;
     border-radius: 20px;
     margin: 10px;
     max-width: 90%;
     height: 300px;
+    transition: height 0.6s ease;
+}
+.img-box:hover {
+    height: 350px;
 }
 footer {
     text-align: center;
