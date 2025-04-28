@@ -13,7 +13,7 @@ body {
     color: white;
 }
 main {
-    align-items: stretch;
+    align-items: start;
     align-content: start;
     justify-items: stretch;
     flex: 1;
@@ -175,7 +175,7 @@ section {
     display: flex;
     flex: 1;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     border: solid;
     border-radius: 20px;
