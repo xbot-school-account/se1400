@@ -115,6 +115,9 @@ section {
     grid-column: 1 / span 1;
     min-width: fit-content;
 }
+#theteam h3, #theteam ul {
+    margin: 5px;
+}
 #about-mission {
     grid-column: 2 / -2;
     display: flex;
