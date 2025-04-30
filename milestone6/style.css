@@ -38,6 +38,7 @@ nav a {
     padding: 1rem 0rem;
     display: block;
     text-align: center;
+    transition: background-color 0.5s ease;
 }
 nav a:hover {
     background-color: #2cd5ff;
@@ -52,7 +53,14 @@ nav ul {
 nav ul li {
     width: 100%;
 }
-
+.hidden-link {
+    text-decoration: none;
+    color: lightgray;
+    cursor: default;
+}
+.hidden-link:hover {
+    cursor: default;
+}
 .fine-print {
     font-size: 8px;
     color: lightgray;
@@ -187,6 +195,16 @@ section {
     grid-column: 1 / -1;
 }
 
+#secret-nav {
+    z-index: 100; 
+    width: 10%; 
+    margin: auto; 
+    background-color: transparent; 
+    border-style: solid; 
+    border-radius: 5px; 
+    border-width: 1px;
+}
+
 .text-box {
     display: flex;
     flex: 1;
@@ -219,10 +237,27 @@ footer {
     width: 100%;
 
 }
+@font-face {
+    font-family: 'StandardGalactic';
+    src: url('fonts/StandardGalacticAlphabet-Regular.ttf') format('truetype');
+  }
+
+.sga-text {
+    font-family: 'StandardGalactic', monospace !important; 
+    letter-spacing: 0.1em;
+}
+
 @media only screen and (max-width: 1200px) {
 header {
     height: 150px;
 }
+}
+
+#about-secret {
+    grid-column: 1 / span 2;
+}
+#phase-one {
+    grid-column: 1 / -1;
 }
 
 @media only screen and (max-width: 968px) {
