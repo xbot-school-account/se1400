@@ -1,0 +1,28 @@
+/* Weird stuff */
+@font-face {
+    font-family: 'EnchantingTable';
+    src: url('../fonts/StandardGalacticAlphabet-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Standard stuff */
+* {
+  font-family: "Share Tech Mono", sans-serif;
+}
+body {
+    background-color: black;
+    color: white;
+}
+
+/* IDs */
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#internal-logo {
+    grid-area: 2 / 2 / 3 / 3;
+    max-width: 100%;
+}
