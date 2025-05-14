@@ -220,6 +220,10 @@ section {
     text-align: center;
     margin-top: 2px;
 }
+.text-box p, dt {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .img-box {
     border: solid;
     border-color: white;
