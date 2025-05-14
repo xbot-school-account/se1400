@@ -13,7 +13,7 @@
       const ty  = (Math.random() * 4) - 2;
       const sk  = (Math.random() * 2) - 1;
       const op  = 0.7 + Math.random() * 0.3;
-      const headsOrTails = Math.floor(Math.random() * 10) + 1;
+      const headsOrTails = Math.floor(Math.random() * 5) + 1;
 
       if (headsOrTails == 1) {
         tooltip.style.background = '#581616';
